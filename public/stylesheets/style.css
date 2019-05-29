@@ -1,8 +1,164 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+html {
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
 }
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/nathan-anderson-316188-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+#navbar {
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  color: #eee;
+}
+
+#navbar div:nth-child(2) {
+  font-size: 1.75em;
+  font-style: italic;
+}
+
+#logo p {
+  font-size: 2em;
+  color: #1B1E3D;
+  text-align: center;
+}
+
+#logo img {
+  width: 150px;
+}
+
+.list-inline li a{
+  color: #eee;
+  text-decoration: none;
+}
+
+#redesSociales {
+  display: flex;
+  min-height: 55px;
+  flex-direction: row;
+}
+
+
+#redesSociales a {
+  text-decoration: none;
+  color: #eee;
+  margin: auto 5px;
+  padding: 5px;
+  border-radius: 50%;
+  min-width: 45px;
+  min-height: 45px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#redesSociales a:nth-child(1) {
+  background: #359AC1;
+}
+
+#redesSociales a:nth-child(2) {
+  background: #4EAC43;
+}
+
+#redesSociales a:nth-child(3) {
+  background: #304B7B;
+}
+
+#redesSociales a:nth-child(4) {
+  background: #4262A5;
+}
+
+#redesSociales a:nth-child(5) {
+  background: #1A5A82;
+}
+
+#redesSociales a:nth-child(6) {
+  background: #E72B2B;
+}
+
+
+#headerContent {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  margin-top: 20px;
+}
+
+#headerContent>div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+#headerContent>div>p {
+  color: #eee;
+}
+
+#headerContent>div>p:nth-child(1) {
+  font-size: 5em;
+  line-height: auto;
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+#headerContent>div>p:nth-child(2) {
+  font-size: 3.5em;
+  width: 100%;
+}
+
+#headerContent>div>a {
+  color: #454545;
+  font-size: 2em;
+  padding: 10px;
+  font-style: italic;
+  text-decoration: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: yellow;
+  box-shadow: 0 5px 0 0 #ffd000;
+  transition: 0.3s;
+}
+
+#headerContent>div>a:hover {
+  box-shadow: none;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+/* Cuerpo */
+
+/* Footer */
