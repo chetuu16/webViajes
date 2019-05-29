@@ -140,7 +140,7 @@ header {
   width: 100%;
 }
 
-#headerContent>div>a {
+.yellow-button {
   color: #454545;
   font-size: 2em;
   padding: 10px;
@@ -153,12 +153,79 @@ header {
   transition: 0.3s;
 }
 
-#headerContent>div>a:hover {
+.yellow-button:hover {
   box-shadow: none;
   margin-top: 5px;
+  color: #454545;
   transition: 0.3s;
 }
 
 /* Cuerpo */
 
 /* Footer */
+footer {
+  background: #1B1F3C;
+  color: #eee;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer>div:first-child{
+  justify-content: center;
+  display: flex; 
+  font-size:1.7em;
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+
+footer>div>div {
+  margin: auto 50px;
+  padding: 50px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+footer>div:first-child:after {
+  content: "";
+  position: absolute;
+  background:black;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+}
+
+footer > div >div>div {
+  margin: 10px;
+}
+
+footer > div> div>p:last-child{
+  font-size: 15px;
+}
+
+footer > div >div:nth-child(2) > ul {
+  list-style: none;
+}
+
+footer > div> div:nth-child(3) {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div> div:nth-child(3) > a {
+  text-decoration: none;
+  background: yellow;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  color: #454545;
+}
+
+footer>div:last-child{
+  margin: 30px;
+}
