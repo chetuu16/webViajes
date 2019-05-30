@@ -227,6 +227,7 @@ header {
   background: yellow;
   display: flex;
   border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -254,6 +255,65 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+#whoWeAre {
+  background-image: url('../images/sectionquiensomostio.jpg');
+  background-size: 100%;
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding: 30vh 5vw;
+}
+
+#whoWeAre>div {
+  padding: 30px;
+  border-radius: 10px;
+  background: #eeeeeeaa;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#whoWeAre h2 {
+  font-size: 2em;
+  position: relative;
+  width: 100%;
+}
+
+#whoWeAre h2:after {
+  position: absolute;
+  content: '';
+  width: 250px;
+  height: 5px;
+  background: yellow;
+  top: 30px;
+  left: 0;
+}
+
+#whoWeAre p {
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+#whoWeAre a {
+  background: #20243E;
+  padding: 20px;
+  color: yellow;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+form button {
+  border: none;
 }
 
 /* Footer */
@@ -323,7 +383,7 @@ footer>div>div:nth-child(3) {
   color: #454545;
 }
 
-footer>div>div:nth-child(3)>a {
+.btnNormal {
   text-decoration: none;
   background: yellow;
   margin-top: 10px;
