@@ -1,2 +1,12 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div id="viajes">
+    {{#each ciudades}}
+    <div class="viaje">
+        <div>
+            <img src="{{this.img}}" alt="{{this.ciudad}}">
+            <div>Save {{this.oferta}}$ pay only</div>
+            <div>{{this.precio}}$</div>
+        </div>
+        <p>{{this.nombre}}</p>
+    </div>
+    {{/each}}
+</div>

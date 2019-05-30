@@ -29,7 +29,9 @@ header {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
+  height: 115vh;
+  border-bottom-left-radius:150px;
+  border-bottom-right-radius: 150px;
 }
 
 #navbar {
@@ -56,7 +58,7 @@ header {
   width: 150px;
 }
 
-.list-inline li a{
+.list-inline li a {
   color: #eee;
   text-decoration: none;
 }
@@ -140,12 +142,15 @@ header {
   width: 100%;
 }
 
+#headerContent>div>a {
+  text-decoration: none;
+}
+
 .yellow-button {
   color: #454545;
   font-size: 2em;
   padding: 10px;
   font-style: italic;
-  text-decoration: none;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background: yellow;
@@ -161,6 +166,76 @@ header {
 }
 
 /* Cuerpo */
+#viajes {
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(2, 400px);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.viaje {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.viajes >div>img {
+  width: 400px;
+  height: 350px;
+}
+
+#viajes .viaje>div {
+  position: relative;
+}
+
+#viajes .viaje>div div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#viajes .viaje > div div:nth-child(3){
+  position: absolute;
+  top:0;
+  right: 0;
+  z-index: 1;
+  font-size: 2.5em;
+  height: 100px;
+  width: 150px;
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+}
+
+#viajes .viaje >div>div:nth-child(2){
+  background: #20243E;
+  padding: 10px;
+  color: #eee;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#viajes .viaje>p{
+  width: 100%;
+  font-size: 1.5em;
+  padding: 10px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 /* Footer */
 footer {
@@ -170,12 +245,14 @@ footer {
   align-items: center;
   display: flex;
   flex-direction: column;
+  border-top-left-radius:150px;
+  border-top-right-radius: 150px;
 }
 
-footer>div:first-child{
+footer>div:first-child {
   justify-content: center;
-  display: flex; 
-  font-size:1.7em;
+  display: flex;
+  font-size: 1.7em;
   height: 450px;
   width: 100%;
   position: relative;
@@ -191,32 +268,41 @@ footer>div>div {
 footer>div:first-child:after {
   content: "";
   position: absolute;
-  background:black;
+  background: black;
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
 }
 
-footer > div >div>div {
+footer>div>div>div {
   margin: 10px;
 }
 
-footer > div> div>p:last-child{
+footer>div>div>p:last-child {
   font-size: 15px;
 }
 
-footer > div >div:nth-child(2) > ul {
+footer>div>div:nth-child(2)>ul {
   list-style: none;
 }
 
-footer > div> div:nth-child(3) {
+footer>div>div:nth-child(2)>ul>li>a {
+  color: #eee;
+  text-decoration: none;
+}
+
+footer>div>div:nth-child(3) {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
 
-footer > div> div:nth-child(3) > a {
+#inputCorreo {
+  color: #454545;
+}
+
+footer>div>div:nth-child(3)>a {
   text-decoration: none;
   background: yellow;
   margin-top: 10px;
@@ -226,6 +312,6 @@ footer > div> div:nth-child(3) > a {
   color: #454545;
 }
 
-footer>div:last-child{
+footer>div:last-child {
   margin: 30px;
 }
