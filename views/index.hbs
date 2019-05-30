@@ -1,12 +1,23 @@
+<div id="headerContent">
+    <div>
+        <p>Viaja!</p>
+        <p>Descubre lugares maravillosos!</p>
+        <a href="#viajes" class="yellow-button">ver destinos</a>
+    </div>
+</div>
+
 <div id="viajes">
     {{#each ciudades}}
-    <div class="viaje">
-        <div>
-            <img src="{{this.img}}" alt="{{this.ciudad}}">
-            <div>Save {{this.oferta}}$ pay only</div>
-            <div>{{this.precio}}$</div>
-        </div>
-        <p>{{this.nombre}}</p>
-    </div>
+    <div>
+        <a href="#">
+            <div class="viaje">
+                <div>
+                    <img src="{{this.img}}" alt="{{this.ciudad}}">
+                    <div>Save {{this.oferta}}$ pay only</div>
+                    <div>{{this.precio}}$</div>
+                </div>
+                <p>{{this.nombre}}</p>
+            </div>
+        </a></div>
     {{/each}}
 </div>

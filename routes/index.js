@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
         nombre: 'Mykonos',
         oferta: '90',
         precio: '359',
-        img: 'https://media-cdn.tripadvisor.com/media/photo-s/0a/17/d5/7a/cathedral-of-saint-john.jpg'
+        img: 'http://lorempixel.com/400/350/city'
       },
       {
         nombre: 'London',

@@ -20,18 +20,12 @@ body {
 }
 
 header {
+  position: absolute;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-image: url('../images/nathan-anderson-316188-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: 100%;
-  height: 115vh;
-  border-bottom-left-radius:150px;
-  border-bottom-right-radius: 150px;
 }
 
 #navbar {
@@ -109,20 +103,26 @@ header {
 
 
 #headerContent {
-  height: 100%;
+  background-image: url('../images/nathan-anderson-316188-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 115vh;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
-  margin-top: 20px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
 }
 
 #headerContent>div {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
   flex-direction: column;
   min-width: 500px;
+  min-height: 300px;
 }
 
 #headerContent>div>p {
@@ -151,8 +151,8 @@ header {
   font-size: 2em;
   padding: 10px;
   font-style: italic;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background: yellow;
   box-shadow: 0 5px 0 0 #ffd000;
   transition: 0.3s;
@@ -170,23 +170,39 @@ header {
   padding: 100px;
   justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(2, 400px);
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#viajes a {
+  text-decoration: none;
+  color: #1B1E3D;
+}
+
+#viajes>div {
+
+  margin: 50px;
 }
 
 .viaje {
+  position: relative;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  border: 3px solid #454545;
+  border-radius: 15px;
+  transition: 0.5s;
 }
 
-.viajes >div>img {
-  width: 400px;
-  height: 350px;
+.viaje:hover {
+  box-shadow: 0 0 30px 0 #454545;
+  transition: 0.5s;
+}
+
+.viaje>div>img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 #viajes .viaje>div {
@@ -200,9 +216,9 @@ header {
   right: 0;
 }
 
-#viajes .viaje > div div:nth-child(3){
+#viajes .viaje>div div:nth-child(3) {
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   z-index: 1;
   font-size: 2.5em;
@@ -210,13 +226,14 @@ header {
   width: 150px;
   background: yellow;
   display: flex;
+  border-top-right-radius: 10px;
   justify-content: center;
   align-items: center;
   font-weight: bold;
 
 }
 
-#viajes .viaje >div>div:nth-child(2){
+#viajes .viaje>div>div:nth-child(2) {
   background: #20243E;
   padding: 10px;
   color: #eee;
@@ -224,10 +241,12 @@ header {
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   align-items: center;
 }
 
-#viajes .viaje>p{
+#viajes .viaje>p {
   width: 100%;
   font-size: 1.5em;
   padding: 10px;
@@ -239,13 +258,15 @@ header {
 
 /* Footer */
 footer {
-  background: #1B1F3C;
+  background-image: linear-gradient(rgb(0, 69, 126) 50%, rgb(0, 37, 85));
+  background-size: cover;
+  background-attachment: fixed;
   color: #eee;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  border-top-left-radius:150px;
+  border-top-left-radius: 150px;
   border-top-right-radius: 150px;
 }
 
@@ -314,4 +335,10 @@ footer>div>div:nth-child(3)>a {
 
 footer>div:last-child {
   margin: 30px;
+}
+
+@media only screen and(min-width: 600px) {
+  body {
+    background: red;
+  }
 }
