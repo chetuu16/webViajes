@@ -37,7 +37,9 @@
 <div id='whereWeAre'>
     <div>
         <div id='mapa'>
-            <img src="../public/images/mapa.png" alt="">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.5618014295324!2d-0.33129428411809164!3d39.45663517948829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60490c7482cd8f%3A0x734fc040eebf5d78!2sGeeksHubs+Valencia!5e0!3m2!1ses!2ses!4v1559288015769!5m2!1ses!2ses"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div id='contacto'>
             <div id='datos'>
@@ -50,28 +52,27 @@
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <label for="inputName">Email</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Nombre">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <label for="inputEmail">Password</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <label for="inputPhone">Email</label>
+                        <input type="number" class="form-control" id="inputPhone" placeholder="Telefono">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <label for="inputCountry">Password</label>
+                        <input type="text" class="form-control" id="inputCountry" placeholder="Pais">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Apartment, studio, or floor">
+                <div class="form-mensaje">
+                    <label for="inputMensaje">Address 2</label>
+                    <textarea name="inputMensaje" id="xD" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 </div>
                 <p>* PLEASE COMPLETE ALL FIELDS CORRECTLY</p>
                 <button type="submit" class="btnNormal">Sign in</button>
